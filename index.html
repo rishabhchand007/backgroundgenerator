@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="bod">
+    <h1>Background Generator</h1>
+    <div class="colorbox">
+        <div class="box">
+            <input type="color" name="color1" id="color1" value="#ffafbd"> 
+        </div>
+        <div class="box">
+            <input type="color" name="color1" id="color2" value="#ffc3a0">
+        </div>       
+    </div>
+    <div class="button-group">
+        <button class="button" type="button" onClick="toRight()">to Right</button>
+        <button class="button" type="button" onClick="toLeft()">to Left</button>
+    </div>
+    <div class="generated" id="generated">
+        background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    </div>
+
+
+    <script type="text/javascript" src="fun.js"></script>
+</body>
+</html>
